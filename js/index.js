@@ -42,9 +42,24 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 
- const nav = document.querySelectorAll("nav a")
- nav.forEach((link) => link.textContent = siteContent.nav['nav-item-1']);
- console.log(nav);
+//  const nav = document.querySelectorAll("nav a");
+//  let navItem = siteContent.nav;
+// //  nav.forEach((link) => link.textContent = navItem);
+// nav.forEach((link) => link.textContent = navItem[link]);
+// // let link1 = siteContent["nav"]['nav-item-1'];
+// // nav.textContent = link1;
+
+// // for (const index in navItem) { 
+// //   console.log(` ${navItem[index]}`);
+// // }
+
+
+// for (const index in navItem) {
+//   nav.textContent = index;
+//   console.log(` ${navItem[index]}`);
+// }
+ 
+//  console.log(nav);
 
 let h1 = document.querySelector('h1');
  h1.textContent = siteContent.cta.h1;
@@ -56,3 +71,6 @@ button.textContent = siteContent.cta.button;
 let ctaImg = document.getElementById('cta-img');
 ctaImg.setAttribute( 'src' , siteContent.cta["img-src"]);
 
+let feat = document.getElementsByClassName('text-content');
+// feat.textContent = main["features-h4"];
+console.log(feat);
