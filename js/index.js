@@ -43,16 +43,33 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 // Nav Links
 let firstLink = document.querySelector('a')
 firstLink.textContent = siteContent["nav"]["nav-item-1"]
+firstLink.style.color = "green"
 let secondLink = firstLink.nextElementSibling
 secondLink.textContent = siteContent["nav"]["nav-item-2"]
+secondLink.style.color = "green"
 let thirdLink = secondLink.nextElementSibling
 thirdLink.textContent = siteContent["nav"]["nav-item-3"]
+thirdLink.style.color = "green"
 let fourthLink = thirdLink.nextElementSibling
 fourthLink.textContent = siteContent["nav"]["nav-item-4"]
+fourthLink.style.color = "green"
 let fifthLink = fourthLink.nextElementSibling
 fifthLink.textContent = siteContent["nav"]["nav-item-5"]
+fifthLink.style.color = "green"
 let sixthLink = fifthLink.nextElementSibling
 sixthLink.textContent = siteContent["nav"]["nav-item-6"]
+sixthLink.style.color = "green"
+
+let nav = document.querySelector('nav')
+console.log(nav)
+ let great = document.createElement('a')
+ let idea = document.createElement('a')
+ great.textContent = "Great!"
+ idea.textContent = "Idea!"
+ console.log(great)
+ nav.appendChild(great)
+nav.prepend(idea)
+
 
 // Header Img
 document.querySelector('#cta-img')
